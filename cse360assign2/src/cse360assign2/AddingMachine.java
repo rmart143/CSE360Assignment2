@@ -8,6 +8,9 @@
  * 				    The file contains the AddingMachine class, AddingMachine Constructor, the 
  * 					getTotal method, the add method, the subtract method, the toString method,
  * 					and the clear method. 
+ * 
+ * URL TO REPOSITORY: https://github.com/rmart143/CSE360Assignment2
+ * 
  */
 
 package cse360assign2;

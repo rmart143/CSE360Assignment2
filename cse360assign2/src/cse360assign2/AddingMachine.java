@@ -22,21 +22,28 @@ package cse360assign2;
 public class AddingMachine {
 
 private int total;
+
+private String equation;
 	
 	/**
 	 * Class constructor
-	 * Makes an AddingMachin object
+	 * Makes an AddingMachine object
 	 */
 	public AddingMachine () {
-		total = 0;  // not needed - included for clarity
+		
+		total = 0;  
+		
+		equation = "0";
+		
 	}
 	
 	/**
 	 * Method Description getTotal
-	 * @return the total integer 
+	 * @return integer total
 	 */
 	public int getTotal () {
-		return 0;
+		
+		return total;
 	}
 	
 	/**
@@ -44,6 +51,10 @@ private int total;
 	 * @param int value
 	 */
 	public void add (int value) {
+		
+		equation += " + " + String.valueOf(value);
+		
+		total = total + value;
 		
 	}
 	
@@ -53,21 +64,32 @@ private int total;
 	 */
 	public void subtract (int value) {
 		
+		equation += " - " + String.valueOf(value);
+		
+		total = total - value;
+		
 	}
 	
 	/**
-	 * Method Description displays the string of the arithmetic actions
-	 * @return String
+	 * Method Description returns the string of the arithmetic actions.
+	 * @return String equation
 	 */
 	public String toString () {
-		return "";
+			
+		return equation;
 	}
 	
 	/**
-	 * Method Description clears the values in the adding Machine object
+	 * Method Description clear() sets the String equation to "0" and
+	 * sets the integer total to zero. 
 	 */
 	public void clear() {
+		
+		equation = "0";
+		
+		total = 0;
 	
 	}
 	
-}
+	
+}//closes class AddingMachine
